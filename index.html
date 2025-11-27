@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/6d58c9287a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-el">
+            <h1 class="heading-el">
+                Generate a <span>random password</span>
+            </h1>
+            <p class="supporting-text-el">Never use an insecure password again.</p>
+            <form>
+                <fieldset class="pass-options">
+                    <legend>Password Options</legend>
+                    <label for="pass-length">Password length:</label>
+                    <input type="number" id="pass-length" placeholder="12" min="8" max="18" value="12">
+                    <fieldset class="pass-complexity">
+                        <legend>Complexity</legend>
+                        <div>
+                            <input type="checkbox" name="complexity" id="number" value="num">
+                            <label for="number">Number</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" name="complexity" id="special-char" value="char">
+                            <label for="special-char">Special Charater</label>
+                        </div>
+                </fieldset>
+
+                <button class="generate-password-btn-el">Generate passwords</button>
+                </fieldset>
+            </form>
+            <hr class="line-el" />
+
+            <p class="helper-text">Click on a password to copy!</p>
+
+            <div class="password-wrapper-el">
+                <div class="password-el">
+                    <p class="password-text-el">>nfJjy!dDvR&ia1</p>
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+                <div class="password-el">
+                    <p class="password-text-el">>nfJjy!dDvR&ia1</p>
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
